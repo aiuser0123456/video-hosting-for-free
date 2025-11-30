@@ -11,10 +11,5 @@
       "src": "/(.*)",
       "dest": "video-server.js"
     }
-  ],
-  "functions": {
-    "video-server.js": {
-      "maxDuration": 30
-    }
-  }
+  ]
 }
