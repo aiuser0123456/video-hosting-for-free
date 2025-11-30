@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "video-server.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "video-server.js"
+    }
+  ],
+  "functions": {
+    "video-server.js": {
+      "maxDuration": 30
+    }
+  }
+}
